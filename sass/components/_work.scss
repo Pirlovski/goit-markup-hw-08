@@ -1,0 +1,37 @@
+.work {
+  margin-bottom: 94px;
+  background-color: var(--white-color);
+
+
+  &__title {
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  & &__list {
+    @include Flex($type-justify: space-between, $type-aling: none);
+  }
+}
+
+.work__item {
+  position: relative;
+}
+.work__link {
+  cursor: pointer;
+}
+
+.work__label {
+  @include Flex();
+
+  position: absolute;
+  width: 100%;
+  color: $white-color;
+
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  left: 0;
+  padding: 28px 0;
+}

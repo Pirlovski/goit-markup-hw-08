@@ -1,0 +1,80 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list__element {
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &:not(:nth-child(-n + 3)) {
+    margin-top: 30px;
+  }
+}
+.portfolio-list__link {
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .portfolio-list__label,
+  &:focus .portfolio-list__label {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio-list__label {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list__text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: $white-color;
+  padding: 63px 24px;
+}
+
+.portfolio-list__content {
+  background-color: $white-color;
+  border: 1px solid $border-color;
+  border-top: none;
+  padding: 20px 24px;
+}
+.portfolio-list__title {
+  color: $title-text-color;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+
+
+
+.portfolio-list__description {
+  color: $grey-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+}

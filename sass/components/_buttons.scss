@@ -1,0 +1,53 @@
+.primary-button {
+  color: $white-color;
+  @extend %background-accent;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color-secondary;
+  }
+}
+
+.primary-button--shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button--flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.secondary__button {
+  color: $title-text-color;
+  background-color: $team-section;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  line-height: 1.63;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    @extend %background-accent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.primary-button--flex-center {
+  display: flex;
+  align-items: center;
+}

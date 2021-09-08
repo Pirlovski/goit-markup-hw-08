@@ -1,0 +1,39 @@
+.clients {
+  padding: 94px 0;
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @include Flex($type-justify: space-between);
+  }
+  &__item {
+    display: block;
+    fill: $border-clients;
+    padding: 12px 36px;
+
+    border-radius: 4px;
+    border: 1px solid $border-clients;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__paragraph:hover &,
+    &__paragraph:focus & {
+      @extend %fill-accent;
+    }
+
+    &:hover,
+    &:focus {
+      @extend %fill-accent;
+      border: 1px solid $accent-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.main-section {
+  background: $main-color;
+  text-align: center;
+  padding-bottom: 280px;
+  padding: 200px 0;
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: $lg, url(../images/background.jpg);
+
+  &__title {
+    font-family: 'Roboto' , sans-serif;
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    width: 696px;
+  }
+}

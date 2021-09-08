@@ -1,0 +1,50 @@
+.team {
+  color: $title-text-color;
+  background-color: $team-section;
+  padding: 94px 0;
+
+  display: flex;
+
+  &__title {
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @include Flex($type-justify: space-between, $type-aling: none);
+  }
+
+  &__social-list {
+    margin: 16px 32px 0 32px;
+
+  }
+  
+}
+
+.team__item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__element {
+  background-color: $white-color;
+  border-radius: 0px 0px 4px 4px;
+  padding: 30px 0;
+}
+
+.teammate {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.teammate__position {
+  color: $grey-color;
+}

@@ -1,0 +1,37 @@
+
+
+.features {
+  padding: 94px 0;
+  background-color: var(--white-color);
+
+  &__list {
+    @include Flex($type-aling: none, $type-justify: space-between);
+  }
+
+  &__item {
+    width: 270px;
+  }
+}
+
+.features__icon {
+  display: flex;
+  width: 270px;
+  justify-content: center;
+  background: $team-section;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 0;
+}
+
+.features__title {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.features__discription {
+  color: $grey-color;
+  font-size: 14px;
+  line-height: 1.71;
+}

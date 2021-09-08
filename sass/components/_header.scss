@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid $header-color;
+}
+
+.header-wrapper__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

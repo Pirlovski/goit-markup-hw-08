@@ -1,0 +1,117 @@
+.form  {
+
+&__field {
+  position: relative;
+  margin-bottom: 10px;
+
+  &--comment {
+    margin-bottom: 20px;
+  }
+
+  &--checkbox {
+    @include Flex($type-aling: baseline);
+    margin-bottom: 30px;
+  }
+}
+
+&__label {
+  display: block;
+  color: $grey-color;
+
+  margin-bottom: 4px;
+}
+
+&__input-group-absolute {
+  position: relative;
+
+  &:focus-within > .form__svg,
+  &:hover > .form__svg {
+    @extend %fill-accent;
+  }
+  &:focus-within > .form__input,
+  &:hover > .form__input {
+    border-color: $accent-color;
+  }
+}
+
+.form__svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(12px, 11px);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input {
+  width: 448px;
+  height: 40px;
+  padding: 11px;
+  outline-offset: -2px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 42px;
+}
+
+.form__comment {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  outline-offset: -2px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within,
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+.form__checkbox-label {
+  display: block;
+  color: $grey-color;
+}
+
+.form__checkbox-wrapper {
+  @include Flex($type-justify: none);
+}
+
+.form__checkbox-icon-object {
+  color: $blue-color;
+}
+.form__checkbox-input {
+  appearance: none;
+}
+.form__checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  &-label--underline {
+    text-decoration: underline;
+    color: $accent-color;
+  }
+}
+
+.form__primary-button {
+  text-align: center;
+}
+
+
+.form__checkbox-input:checked + .form__checkbox-icon {
+  @extend %background-accent;
+  border-color: $accent-color;
+}
+
+.form__checkbox-icon {
+  display: flex;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 7px;
+}
+}
