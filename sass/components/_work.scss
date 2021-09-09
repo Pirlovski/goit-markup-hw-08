@@ -14,6 +14,16 @@
   & &__list {
     @include Flex($type-justify: space-between, $type-aling: none);
   }
+
+  &--display-none{
+    display: none;
+
+    @media (min-width:1200px){
+      display: block;
+    }
+    padding-top: 0;
+  }
+
 }
 
 .work__item {
