@@ -25,6 +25,10 @@
 .primary-button--flex-center {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  @media (max-width: 1200px) {
+    margin: 20px auto 0 auto;
+  }
 }
 
 .secondary__button {
@@ -50,4 +54,29 @@
 .primary-button--flex-center {
   display: flex;
   align-items: center;
+}
+
+.button__mobile {
+    display: none;
+  @media (max-width: 767px) {
+    display: inline-flex;
+    padding: 0;
+    margin: 22px 0;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+  }
+
+  & .button__mobile-menu {
+    display: block;
+  }
+  &.is-open .button__mobile-menu {
+    display: none;
+  }
+  & .button__mobile-cross {
+    display: none;
+  }
+  &.is-open .button__mobile-cross {
+    display: block;
+  }
 }

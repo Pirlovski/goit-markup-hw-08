@@ -1,6 +1,21 @@
 .join {
-  margin-left: 70px;
+  @media (max-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  @media (max-width:1199px){
+
+    display: inline-block;
+  }
   &__title {
     display: flex;
     color: $white-color;
@@ -10,10 +25,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 12px;
+
+    @media (max-width: 1199px) {
+      margin-left: 32px;
+    }
   }
 
-  &__list {
-    display: flex;
-    tab-size: 0;
-  }
+  
 }

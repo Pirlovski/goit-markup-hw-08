@@ -1,21 +1,35 @@
 .subscription {
-  margin: 12px 0 0 93px;
-
+  @media (min-width: 1200px) {
+    margin: 12px 0 0 93px;
+  }
   &__title {
     color: $white-color;
     font-size: 14px;
     line-height: 1.14;
+    display: flex;
+  
+    @media (max-width: 1200px) {
+      justify-content: center;
+      margin-bottom: 20px;
+    } 
   }
 
   &__nav {
-    @include Flex($type-justify: none, $type-aling: baseline);
+    @media (min-width: 1200px) {
+      display: flex;
+      margin-top: 20px;
+    }
+    // @media (max-width: 1200px) {
+    //   display: flex;
+    //   margin-top: 20px;
+    // }
+
   }
+
 }
 
 .subscription__input {
-  margin-top: 20px;
   height: 50px;
-  width: 358px;
   outline-offset: -2px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -23,6 +37,14 @@
   padding-left: 16px;
   color: $placeholder-color;
   margin-right: 12px;
+
+  @media (max-width: 1200px) {
+    width: 450px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 353px;
+  }
 }
 
 .subscription__icon {

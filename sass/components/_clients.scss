@@ -1,5 +1,5 @@
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__title {
     font-family: Roboto;
@@ -9,12 +9,20 @@
     text-align: center;
     font-size: 36px;
     line-height: 1.16;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
-    @include Flex($type-justify: space-between);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
+
   &__item {
     display: block;
     fill: $border-clients;
@@ -34,6 +42,20 @@
     &:focus {
       @extend %fill-accent;
       border: 1px solid $accent-color;
+    }
+  }
+
+  &__paragraph {
+    width: calc((100% - 30px * 2) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    @media (min-width: 768px) {
+      width: calc((100% - 30px * 3) / 3);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 30px * 6) / 6);
     }
   }
 }
