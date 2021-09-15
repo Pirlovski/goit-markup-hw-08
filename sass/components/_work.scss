@@ -2,7 +2,6 @@
   margin-bottom: 94px;
   background-color: var(--white-color);
 
-
   &__title {
     color: $title-text-color;
     text-align: center;
@@ -15,15 +14,14 @@
     @include Flex($type-justify: space-between, $type-aling: none);
   }
 
-  &--display-none{
+  &--display-none {
     display: none;
 
-    @media (min-width:1200px){
+    @media (min-width: 1200px) {
       display: block;
     }
     padding-top: 0;
   }
-
 }
 
 .work__item {

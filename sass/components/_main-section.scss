@@ -33,31 +33,25 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
-@media (min-width:1200px) {
-  .main-section__title {
-    font-family: 'Roboto', sans-serif;
-    color: $white-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  @media (min-width: 1200px) {
+    .main-section__title {
+      font-family: 'Roboto', sans-serif;
+      color: $white-color;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      margin: 0 auto;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
   }
-  
-}
-
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 480px),
   (min-resolution: 192dpi) and (max-width: 480px),
   (min-resolution: 2dppx) and (max-width: 480px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/header-img@2x.jpg);
   }
 }
@@ -65,11 +59,7 @@
   (min-resolution: 288dpi) and (max-width: 480px),
   (min-resolution: 3dppx) and (max-width: 480px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/header-img@3x.jpg);
   }
 }
@@ -77,11 +67,7 @@
   (min-resolution: 192dpi) and (min-width: 481px),
   (min-resolution: 2dppx) and (min-width: 481px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/header-img@2x.jpg);
   }
 }
@@ -89,11 +75,7 @@
   (min-resolution: 288dpi) and (min-width: 481px),
   (min-resolution: 3dppx) and (min-width: 481px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/header-img@3x.jpg);
   }
 }
@@ -101,11 +83,7 @@
   (min-resolution: 192dpi) and (min-width: 769px),
   (min-resolution: 2dppx) and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero1200@2x-min.jpg);
   }
 }
@@ -113,11 +91,7 @@
   (min-resolution: 288dpi) and (min-width: 769px),
   (min-resolution: 3dppx) and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/header-img@3x.jpg);
   }
 }

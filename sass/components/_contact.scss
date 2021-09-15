@@ -114,9 +114,6 @@
   &:focus .contact__icon {
     @extend %fill-accent;
   }
-
-
-  
 }
 .contact__icon {
   fill: $grey-color;

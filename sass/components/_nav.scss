@@ -36,12 +36,10 @@
   .nav__item {
     margin-right: 50px;
 
-
     &:last-child {
       margin-right: 0;
     }
   }
-  
 }
 .nav__link {
   position: relative;
@@ -76,8 +74,8 @@
     border-radius: 2px;
   }
 }
-@media (max-width:768px) {
-  .nav--current::after{
+@media (max-width: 768px) {
+  .nav--current::after {
     display: none;
   }
 }
