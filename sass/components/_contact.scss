@@ -6,9 +6,7 @@
   font-size: 14px;
   line-height: 1.14;
 
-  &__link--flex {
-    @include Flex($type-justify: none);
-  }
+ 
   &__item:not(:first-child) {
     margin-left: 50px;
   }
@@ -19,27 +17,27 @@
   }
 }
 
-@media (max-width: 768px) {
-  .contact__link--mobile {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-    color: $accent-color;
+// @media (max-width: 768px) {
+//   .contact__link--mobile {
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 34px;
+//     line-height: 40px;
+//     color: $accent-color;
 
-    letter-spacing: 0.02em;
-  }
-  .contact__link--mobile-grey {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: $grey-color;
-  }
-}
+//     letter-spacing: 0.02em;
+//   }
+//   .contact__link--mobile-grey {
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 28px;
+//     letter-spacing: 0.02em;
+//     color: $grey-color;
+//   }
+// }
 @media (max-width: 768px) {
   .contact {
     flex-direction: column-reverse;
@@ -98,6 +96,32 @@
   }
 }
 .contact__link {
+  color: $grey-color;
+@media (max-width:768px) {
+  &--mobile
+  {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    color: $accent-color;
+
+    letter-spacing: 0.02em;
+  }
+
+
+  &--height{
+    font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $grey-color;
+  
+  }
+}
   @media (min-width: 767px) {
     color: $grey-color;
   }
@@ -126,6 +150,4 @@
     display: none;
   }
 }
-.contact__link--footer {
-  color: $grey-color;
-}
+
