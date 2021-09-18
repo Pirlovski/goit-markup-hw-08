@@ -26,14 +26,19 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     margin: 20px auto 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 
 .secondary__button {
   color: $title-text-color;
   background-color: $team-section;
+  cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
@@ -49,6 +54,19 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+ &.nav--current{
+   color: $accent-color-secondary;
+
+   &.nav--current:hover,
+   &.nav--current:focus {
+     color: $white-color;
+     @extend %background-accent;
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+       0px 2px 2px rgba(0, 0, 0, 0.12);
+   }
+
+ }
+
 }
 
 .primary-button--flex-center {
@@ -66,7 +84,9 @@
     background-color: transparent;
     z-index: 10;
   }
-
+  @media (max-width: 768px) {
+    margin-left: auto;
+  }
   & .button__mobile-menu {
     display: block;
   }

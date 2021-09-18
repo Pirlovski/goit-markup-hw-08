@@ -30,7 +30,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .form__input,
 .form__comment,
 .subscription__input {
@@ -59,9 +61,16 @@ img {
   &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0;
+    // justify-content: space-between;
+    // margin: 0;
+    // @media (min-width: 768px) and (max-width:1199px) {
+
+    //   justify-content: space-between;
+    // }
+
   }
+
+
 }
 .overlow-hidden {
   overflow: hidden;

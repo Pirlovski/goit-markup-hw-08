@@ -3,6 +3,9 @@
   @media (max-width: 767px) {
     display: flex;
   }
+  @media (max-width: 457px) {
+    flex-wrap: wrap;
+  }
   &__item {
     padding: 0 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -12,6 +15,11 @@
     &:last-child {
       border-right: none;
       padding: 0 0 0 10px;
+    }
+
+    @media (max-width: 457px) {
+      padding: 0 10px 0 0;
+      
     }
   }
   &__link {

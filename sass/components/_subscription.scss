@@ -36,12 +36,17 @@
   color: $placeholder-color;
   margin-right: 12px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media (min-width: 479px) and (max-width: 1199px) {
     width: 450px;
   }
 
-  @media (min-width: 1200px) {
-    width: 353px;
+
+  @media  (min-width: 1200px) {
+    width: 358px;
   }
 }
 
