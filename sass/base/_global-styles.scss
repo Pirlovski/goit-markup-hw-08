@@ -32,6 +32,7 @@ img {
 }
 body.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 .form__input,
 .form__comment,

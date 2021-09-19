@@ -49,6 +49,14 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 10px;
+  
+ 
+}
+
+@media (max-width:767px) {
+  .features__title {
+text-align: center;
+  }
 }
 .features__discription {
   color: $grey-color;

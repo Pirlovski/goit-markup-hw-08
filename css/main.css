@@ -319,6 +319,7 @@ summary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: fixed;
   }
 }
 
@@ -363,6 +364,7 @@ img {
 
 body.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 
 .form__input,
@@ -423,7 +425,7 @@ body.modal-open {
   margin-top: 20px;
 }
 
-.nav--current::after, .social-list__link--fill:hover, .social-list__link--fill:focus, .social-list__link--background-color:hover, .social-list__link--background-color:focus, .form .form__checkbox-input:checked + .form__checkbox-icon, .primary-button, .secondary__button:hover, .secondary__button:focus, .secondary__button.nav--current:hover, .secondary__button.nav--current:focus {
+.nav--current::after, .social-list__link--fill:hover, .social-list__link--fill:focus, .social-list__link--background-color:hover, .social-list__link--background-color:focus, .form .form__checkbox-input:checked + .form__checkbox-icon, .primary-button, .secondary__button:hover, .secondary__button:focus {
   background-color: #2196f3;
 }
 
@@ -876,6 +878,12 @@ body.modal-open {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features__discription {
@@ -1848,16 +1856,6 @@ body.modal-open {
 }
 
 .secondary__button:hover, .secondary__button:focus {
-  color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.secondary__button.nav--current {
-  color: #188CE8;
-}
-
-.secondary__button.nav--current.nav--current:hover, .secondary__button.nav--current.nav--current:focus {
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
