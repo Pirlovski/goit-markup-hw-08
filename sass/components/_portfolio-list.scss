@@ -45,8 +45,10 @@
 .portfolio-list__label {
   position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background: rgba(33, 150, 243, 0.9);
   top: 0;
   left: 0;
