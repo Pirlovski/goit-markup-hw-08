@@ -1387,7 +1387,7 @@ body.modal-open {
     height: 100vh;
     padding: 0 15px;
     opacity: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 }
 
@@ -1610,6 +1610,7 @@ body.modal-open {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+  overflow-y: auto;
 }
 
 @media (max-width: 767px) {
@@ -1907,6 +1908,10 @@ body.modal-open {
 
 .button__mobile.is-open .button__mobile-cross {
   display: block;
+}
+
+.secondary__button--accent-color {
+  color: #2196f3;
 }
 
 .additional-social {
